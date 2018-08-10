@@ -42,7 +42,6 @@
         @try {
             ret = [NSKeyedUnarchiver unarchiveObjectWithData:(__bridge NSData *)keyData];
         } @catch (NSException *e) {
-            DDLog(@"Unarchive of %@ failed: %@", service, e);
         } @finally {
         }
     }
